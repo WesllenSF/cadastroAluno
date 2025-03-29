@@ -39,7 +39,8 @@ var escola;
         document.getElementById("escola").textContent = p.escola;
     });
     calc.addEventListener("click", () => {
-        // Pega as Notas
+        p = new escola.Aluno(parseInt(campoMatricula.value));
+        // Converte os campos para "Variaveis"
         p.nota1 = parseInt(campoNota1.value);
         p.nota2 = parseInt(campoNota2.value);
         p.nota3 = parseInt(campoNota3.value);

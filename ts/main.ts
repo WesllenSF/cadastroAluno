@@ -26,6 +26,8 @@ namespace escola{
         
         p = new Aluno(parseInt(campoMatricula.value));
         // Converte os campos para "Variaveis"
+
+
         p.nome = campoNome.value;
         p.nascimento = parseInt(campoNasc.value);
         p.cpf = campoCPF.value;
@@ -48,9 +50,10 @@ namespace escola{
 
 
     calc.addEventListener("click", () => {
+        
+        p = new Aluno(parseInt(campoMatricula.value));
 
-        // Pega as Notas
-
+        // Converte os campos para "Variaveis"
         p.nota1 = parseInt(campoNota1.value);
         p.nota2 = parseInt(campoNota2.value);
         p.nota3 = parseInt(campoNota3.value);
