@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Aluno</title>
+
+        <!-- Link com o node_modules -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+        
+</head>
+<body>
+                    <!-- Coleta de Valores  -->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 conteudo">
+                        <div class="row">
+
+                            <div class="col-4">
+                            
+                                    <h4 class="dadoscadastrados fw-bolder">Cadastro do Aluno</h4>
+
+                                        <!-- Input nome -->
+                                        <label class="fw-bolder">Nome do Aluno: </label> 
+                                        <input type="text" class="form-control" id="campoNome">
+
+                                        <!-- Input Nascimento -->
+                                        <label class="mt-1 fw-bolder">Ano de Nascimento: </label>
+                                        <input type="number" class="form-control" id="campoNasc" >
+
+                                        <!-- input CPF -->
+                                        <label class="mt-1 fw-bolder">CPF: </label>
+                                        <input type="text" class="form-control" id="campoCPF">
+
+                                        <!-- input Endereço -->
+                                        <label class="mt-1 fw-bolder">Endereço: </label>
+                                        <input type="text" class="form-control" id="campoEndereco">
+
+                                        <!-- input Telefone -->
+                                        <label class="mt-1 fw-bolder">Telefone: </label>
+                                        <input type="number" class="form-control" id="campoTelefone">
+
+                                        <!-- input Matricula -->
+                                        <label class="mt-1 fw-bolder">Número da Matrícula: </label>
+                                        <input type="number" class="form-control" id="campoMatricula">
+
+                                        <!-- input Curso -->
+                                        <label class="mt-1 fw-bolder">Curso: </label>
+                                        <input type="text" class="form-control" id="campoCurso">
+
+                                        <!-- input Escola -->
+                                        <label class="mt-1 fw-bolder">Escola: </label>
+                                        <input type="text" class="form-control" id="campoEscola">
+
+
+                                        <!-- Botão Cadastrar -->
+                                        <button class="btn btn-success form-control mt-2 mb-2" type="button" id="cadastrar">Cadastrar</button>
+
+
+                            </div>
+                            
+
+                            <div class="col-4">
+
+                                                    <!-- EXIBIÇÃO DAS INFORMAÇÕES -->
+                                            <h4 class="dadoscadastrados fw-bolder">Aluno Cadastrado</h4>
+
+                                            <!-- Exibição nome -->
+                                            <h4>Nome: <span style="margin-top: 100px;" id="nome"> </span></h4>
+                        
+                                            <!-- Exibição ano -->
+                                            <h4>Nascimento: <span style="margin-top: 100px;" id="nascimento"> </span></h4>
+                                            
+                                            <!-- Exibição CPF -->
+                                            <h4>CPF: <span style="margin-top: 100px;" id="cpf"> </span></h4>
+                        
+                                            <!-- Exibição Endereço -->
+                                            <h4>Endereço: <span style="margin-top: 100px;" id="endereco"> </span></h4>
+
+                                            <!-- Exibição Telefone -->
+                                            <h4>Telefone: <span style="margin-top: 100px;" id="telefone"> </span></h4>
+                        
+                                            <!-- Exibição Numero matricula -->
+                                            <h4>Matricula: <span style="margin-top: 100px;" id="matricula"> </span></h4>
+
+                                            <!-- Exibição Curso -->
+                                            <h4>Curso: <span style="margin-top: 100px;" id="curso"> </span></h4>
+                        
+                                            <!-- Exibição Escola -->
+                                            <h4>Escola: <span style="margin-top: 100px;" id="escola"> </span></h4>
+
+                                            
+                            </div>           
+
+                            <div class="col-4">
+
+
+                                    <h4 class="dadoscadastrados fw-bolder">Notas</h4>
+
+                                    <!-- Input nota 1 -->
+                                    <label class="fw-bolder">Nota 1: </label> 
+                                    <input type="number" class="form-control" id="campoNota1">
+
+                                    <!-- Input nota 2 -->
+                                    <label class="fw-bolder">Nota 2: </label> 
+                                    <input type="number" class="form-control" id="campoNota2">
+
+                                    <!-- Input nota 3 -->
+                                    <label class="fw-bolder">Nota 3: </label> 
+                                    <input type="number" class="form-control" id="campoNota3">
+
+                                    <!-- Input nota 4 -->
+                                    <label class="fw-bolder">Nota 4: </label> 
+                                    <input type="number" class="form-control" id="campoNota4">
+
+                                    <!-- Botão calcular media -->
+                                    <button class="btn btn-success form-control mt-2 mb-2" type="button" id="calc">Cadastrar</button>
+
+
+                                <!-- Exibição do nome do produto -->
+                                <h4 class="notas">Média: <br> <span id="mostrarNota"> </span> </h4>
+                        
+                            </div>          
+
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+    
+        <!-- link com JS -->
+    <script src="./js/pessoa.js"></script>
+    <script src="./js/aluno.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
